@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ghost_Anim_Test
+  m_Name: Ghost1_Up
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -6306481640997641273, guid: 64dad9b1cb3845840a0fd79d410dd04e, type: 3}
+      value: {fileID: -3177753070909661913, guid: 37d08883d827ad849b3dba5c41dd8de3, type: 3}
     - time: 0.2
-      value: {fileID: 1736153723, guid: 64dad9b1cb3845840a0fd79d410dd04e, type: 3}
+      value: {fileID: -583235414, guid: 37d08883d827ad849b3dba5c41dd8de3, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,8 +46,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -6306481640997641273, guid: 64dad9b1cb3845840a0fd79d410dd04e, type: 3}
-    - {fileID: 1736153723, guid: 64dad9b1cb3845840a0fd79d410dd04e, type: 3}
+    - {fileID: -3177753070909661913, guid: 37d08883d827ad849b3dba5c41dd8de3, type: 3}
+    - {fileID: -583235414, guid: 37d08883d827ad849b3dba5c41dd8de3, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

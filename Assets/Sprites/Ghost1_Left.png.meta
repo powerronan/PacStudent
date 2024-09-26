@@ -105,7 +105,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -116,6 +116,27 @@ TextureImporter:
       bones: []
       spriteID: f32a2b610342b1140800000000000000
       internalID: 4691383225794339391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost1_Left_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84ee8ce848f51041b06d7723f8715c0
+      internalID: 1120082015
       vertices: []
       indices: 
       edges: []
@@ -132,6 +153,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Ghost1_Left_0: 4691383225794339391
+      Ghost1_Left_1: 1120082015
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
