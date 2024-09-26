@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 28bf071bf529813428ddf0ef1cb2cf2b
+guid: a54b2db3d36b4d845b08c68fac704406
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4762304649203484137
-    second: InsideWall_T_Junction_0
+      213: -8527442550737655860
+    second: New Piskel (4)_0
+  - first:
+      213: -1643389817789898457
+    second: New Piskel (4)_1
+  - first:
+      213: 7211491898151854808
+    second: New Piskel (4)_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,22 +106,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: InsideWall_T_Junction_0
+      name: OuterWall_Corner
       rect:
         serializedVersion: 2
-        x: 5
-        y: 5
-        width: 6
-        height: 6
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e507ffb8da171240800000000000000
-      internalID: 4762304649203484137
+      spriteID: cc72bb03e2078a980800000000000000
+      internalID: -8527442550737655860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OuterWall
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721a323faa18139e0800000000000000
+      internalID: -1643389817789898457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerWall
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2e2f95cad541460800000000000000
+      internalID: 7211491898151854808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerWall_Corner
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b336401348a90b42af7d50e50288dff
+      internalID: -38516949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junction
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b094af05a8d15de4289d68fa0bc8f34f
+      internalID: 2042978007
       vertices: []
       indices: 
       edges: []
@@ -123,7 +213,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: a4513c554ce47364d9a51e1bba7403b8
     internalID: 0
     vertices: []
     indices: 
@@ -131,7 +221,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      InsideWall_T_Junction_0: 4762304649203484137
+      InnerWall: 7211491898151854808
+      InnerWall_Corner: -38516949
+      Junction: 2042978007
+      OuterWall: -1643389817789898457
+      OuterWall_Corner: -8527442550737655860
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
