@@ -109,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WallsAndJunctionSprites_0
+      name: OuterWall
       rect:
         serializedVersion: 2
         x: 0
@@ -117,7 +117,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -130,7 +130,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallsAndJunctionSprites_1
+      name: OuterWall_Corner
       rect:
         serializedVersion: 2
         x: 16
@@ -138,7 +138,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,7 +151,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallsAndJunctionSprites_2
+      name: InnerWall
       rect:
         serializedVersion: 2
         x: 32
@@ -159,7 +159,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,7 +172,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallsAndJunctionSprites_3
+      name: InnerWall_Corner
       rect:
         serializedVersion: 2
         x: 0
@@ -180,7 +180,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,7 +193,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallsAndJunctionSprites_4
+      name: T_Junction
       rect:
         serializedVersion: 2
         x: 16
@@ -201,7 +201,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,11 +224,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      WallsAndJunctionSprites_0: -16581977
-      WallsAndJunctionSprites_1: -471975209
-      WallsAndJunctionSprites_2: 1957242736
-      WallsAndJunctionSprites_3: 1094880864
-      WallsAndJunctionSprites_4: -29784403
+      InnerWall: 1957242736
+      InnerWall_Corner: 1094880864
+      OuterWall: -16581977
+      OuterWall_Corner: -471975209
+      T_Junction: -29784403
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
