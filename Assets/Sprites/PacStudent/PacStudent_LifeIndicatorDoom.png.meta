@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: 904c416d9a8e99141a15a61a6d6008f6
+guid: 863db0b56ce90c44b813abe3d8f00bc7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4810702507026764722
-    second: New Piskel (7)_0
+      213: 3275028520990625885
+    second: New Piskel (8)_0
   - first:
-      213: 226647019809873599
-    second: New Piskel (7)_1
-  - first:
-      213: -7198345155242531674
-    second: New Piskel (7)_2
-  - first:
-      213: 9072680028889410737
-    second: New Piskel (7)_3
+      213: 3150403194116108143
+    second: New Piskel (8)_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WallsAndJunctionSprites_0
+      name: PacStudent_LifeIndicatorDoom_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
+        x: 1
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c17ef5536edf73458a9f73b8b2e17d6
-      internalID: -16581977
+      spriteID: a8cc4055d4ba1374d8a70aa87a64cb62
+      internalID: -1838755823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallsAndJunctionSprites_1
+      name: PacStudent_LifeIndicatorDoom_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
+        x: 17
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,71 +138,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03f4491b293c32e4ab02921d717f8aa8
-      internalID: -471975209
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WallsAndJunctionSprites_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1123797a5074504cbe30f15a63892aa
-      internalID: 1957242736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WallsAndJunctionSprites_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbb0f7a7e713487489ce7387ac10e08b
-      internalID: 1094880864
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WallsAndJunctionSprites_4
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5239681b773a814d98624a98dd0b7c9
-      internalID: -29784403
+      spriteID: 62de0215dd66fca4e937ea1dcf0eadcd
+      internalID: -1356571767
       vertices: []
       indices: 
       edges: []
@@ -216,7 +147,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 264081dd9b0302f4d8f23fa4a70ba5a1
+    spriteID: 566f6c29199f6f84f8ac75810640c0ca
     internalID: 0
     vertices: []
     indices: 
@@ -224,11 +155,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      WallsAndJunctionSprites_0: -16581977
-      WallsAndJunctionSprites_1: -471975209
-      WallsAndJunctionSprites_2: 1957242736
-      WallsAndJunctionSprites_3: 1094880864
-      WallsAndJunctionSprites_4: -29784403
+      PacStudent_LifeIndicatorDoom_0: -1838755823
+      PacStudent_LifeIndicatorDoom_1: -1356571767
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
