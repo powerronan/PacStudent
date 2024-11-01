@@ -4,6 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 5369e4b6dd3151a428f63c5a806d7fb0
+  - enabled: 1
+    path: Assets/Scenes/PacStudent.unity
+    guid: 71b7b0412ea87ab4e99b8337cd9ff5f5
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
