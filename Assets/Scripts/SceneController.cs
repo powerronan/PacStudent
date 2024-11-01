@@ -8,6 +8,12 @@ public class SceneController : MonoBehaviour
 {
     public void LoadGameScene()
     {
+        DontDestroyOnLoad(gameObject);
         SceneManager.LoadScene("PacStudent");
+    }
+
+    public void LoadStartScene()
+    {
+        SceneManager.LoadScene("StartScene");
     }
 }
