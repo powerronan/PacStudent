@@ -25,19 +25,20 @@ public class Tweener : MonoBehaviour
                 float timeElapsed = Time.time - activeTween.StartTime;
                 float t = timeElapsed / activeTween.Duration;
 
+
                 // Perform linear interpolation
                 activeTween.Target.position = Vector3.Lerp(activeTween.StartPos, activeTween.EndPos, t);
             }
             else
             {
-                // Set final position and clear the active tween
+                // Set final position and clear the active tween.
                 activeTween.Target.position = activeTween.EndPos;
                 activeTween = null;
             }
         }
     }
 
-    // Check if the current tween is complete
+    // Check if tween is complete.
     public bool IsTweenComplete()
     {
         return activeTween == null;
