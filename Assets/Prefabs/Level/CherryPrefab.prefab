@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4691161381521705790}
   - component: {fileID: 3086870015636106729}
   m_Layer: 0
-  m_Name: Cherry_Bread
+  m_Name: CherryPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

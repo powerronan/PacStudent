@@ -9,7 +9,7 @@ public class Tweener : MonoBehaviour
     // Add a new tween
     public void AddTween(Transform targetObject, Vector3 startPos, Vector3 endPos, float duration)
     {
-        if (activeTween == null)
+        if(activeTween == null)
         {
             activeTween = new Tween(targetObject, startPos, endPos, duration);
         }
@@ -17,9 +17,9 @@ public class Tweener : MonoBehaviour
 
     void Update()
     {
-        if (activeTween != null)
+        if(activeTween != null)
         {
-            if (Vector3.Distance(activeTween.Target.position, activeTween.EndPos) > 0.1f)
+            if(Vector3.Distance(activeTween.Target.position, activeTween.EndPos) > 0.1f)
             {
                 // Calculate interpolation fraction
                 float timeElapsed = Time.time - activeTween.StartTime;
