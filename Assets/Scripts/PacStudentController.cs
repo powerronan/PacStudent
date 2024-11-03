@@ -52,7 +52,7 @@ public class PacStudentMovement : MonoBehaviour
     private Vector3 gridOrigin = new Vector3(-14f, 15f, 0f); // Needed to be these coords to align with tilemap
     private float cellSize = 1f;
 
-    void Start()
+ void Start()
     {
         tweener = GetComponent<Tweener>();
         audioSource = GetComponent<AudioSource>();
@@ -65,6 +65,7 @@ public class PacStudentMovement : MonoBehaviour
 
     void Update()
     {  
+        // Handle input
         if(Input.GetKeyDown(KeyCode.W))
         {
             lastInput = new Vector2Int(0, -1); // Up
@@ -82,16 +83,17 @@ public class PacStudentMovement : MonoBehaviour
             lastInput = new Vector2Int(1, 0); // Right
         }
 
-        // If not currently tweening, attempt movement I'm not sure if this works
+        // If not currently tweening, attempt movement
         if(tweener.IsTweenComplete())
         {
-            TryMove(lastInput);
+            bool moved = TryMove(lastInput);
 
-            if(tweener.IsTweenComplete())
+            if(!moved)
             {
                 // If lastInput didn't result in movement, try currentInput
                 TryMove(currentInput);
             }
+
             if(audioSource.isPlaying)
             {
                 audioSource.Stop();
@@ -109,24 +111,37 @@ public class PacStudentMovement : MonoBehaviour
         UpdateAnimationParam();
     }
 
-    void TryMove(Vector2Int direction)
+    bool TryMove(Vector2Int direction)
     {
-        if (direction == Vector2Int.zero) return;
+        if (direction == Vector2Int.zero) return false;
 
         Vector2Int nextGridPosition = gridPosition + direction;
 
         if (IsWalkable(nextGridPosition))
         {
-            // Update positions for PacStudent and tween target
-            gridPosition = nextGridPosition;
-            Vector3 targetPosition = GridToWorldPosition(gridPosition);
+            // Check for teleporters
+            if (IsTeleporter(nextGridPosition))
+            {
+                HandleTeleport(nextGridPosition);
+            }
+            else
+            {
+                // Move normally
+                MoveToPosition(nextGridPosition);
+            }
 
-            // Start tweening to the next position
-            tweener.AddTween(pacStudent.transform, pacStudent.transform.position, targetPosition, moveDuration);
-
-            
             currentInput = direction;
+            return true;
         }
+
+        return false;
+    }
+
+    void MoveToPosition(Vector2Int targetGridPosition)
+    {
+        gridPosition = targetGridPosition;
+        Vector3 targetPosition = GridToWorldPosition(gridPosition);
+        tweener.AddTween(pacStudent.transform, pacStudent.transform.position, targetPosition, moveDuration);
     }
 
     void ToggleParticleSystem()
@@ -160,11 +175,55 @@ public class PacStudentMovement : MonoBehaviour
             animator.SetFloat("MoveX", currentInput.x);
             animator.SetFloat("MoveY", -currentInput.y);
         }
-
         else
         {
             animator.SetFloat("MoveX", 0f);
             animator.SetFloat("MoveY", 0f);
+        }
+    }
+
+    bool IsTeleporter(Vector2Int position)
+    {
+        // Left Teleporter Positions
+        if (position.x == 0 && (position.y == 9 || position.y == 19))
+            return true;
+        // Right Teleporter Positions
+        if (position.x == fullLevelMap.GetLength(1) - 1 && (position.y == 9 || position.y == 19))
+            return true;
+        return false;
+    }
+
+    void HandleTeleport(Vector2Int position) // These don't work I can't make them work.
+    {
+        Vector2Int targetPosition;
+        if (position.x == 0)
+        {
+            // Teleport to the right side
+            targetPosition = new Vector2Int(fullLevelMap.GetLength(1) - 2, position.y);
+        }
+        else if (position.x == fullLevelMap.GetLength(1) - 1)
+        {
+            // Teleport to the left side
+            targetPosition = new Vector2Int(1, position.y);
+        }
+        else
+        {
+            // Not a teleporter, move normally
+            MoveToPosition(position);
+            return;
+        }
+
+        // Update PacStudent's grid position
+        gridPosition = targetPosition;
+
+        // Move PacStudent to the new position instantly
+        pacStudent.transform.position = GridToWorldPosition(gridPosition);
+
+        // Start moving in the same direction
+        Vector2Int nextGridPosition = gridPosition + currentInput;
+        if (IsWalkable(nextGridPosition))
+        {
+            MoveToPosition(nextGridPosition);
         }
     }
 
@@ -188,5 +247,4 @@ public class PacStudentMovement : MonoBehaviour
         float y = gridOrigin.y - gridPos.y * cellSize - cellSize / 2f;
         return new Vector3(x, y, 0f);
     }
-
 }
